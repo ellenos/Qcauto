@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/test/fixtures
+END
+qtp_logs.yml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/test/fixtures/qtp_logs.yml
+END
+qtp_resources.yml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/test/fixtures/qtp_resources.yml
+END

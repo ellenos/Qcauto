@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/qa/!svn/ver/6939/Production_QC/Automation/Qcauto/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/config/initializers/inflections.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/config/initializers/session_store.rb
+END
+load_config.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qa/!svn/ver/6538/Production_QC/Automation/Qcauto/config/initializers/load_config.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/config/initializers/backtrace_silencers.rb
+END
+delayed_job_config.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/config/initializers/delayed_job_config.rb
+END
+qtp_config.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/qa/!svn/ver/6939/Production_QC/Automation/Qcauto/config/initializers/qtp_config.rb
+END
+new_rails_defaults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/config/initializers/new_rails_defaults.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/config/initializers/mime_types.rb
+END

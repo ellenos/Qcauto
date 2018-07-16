@@ -1,0 +1,7 @@
+<% content_for :header do -%>
+Get Consolidated database status
+<br/>
+<% end -%>
+
+
+<% form_tag(status_path, :method => "get") do %> <%= label_tag(:dbname, "<br/>Enter the name of the main consolidated database:") %> <%= text_field_tag(:q) %> <%= submit_tag("Run") %> <% end %> 

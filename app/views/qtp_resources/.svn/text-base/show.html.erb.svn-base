@@ -1,0 +1,22 @@
+<% content_for :header do -%>
+  Database code: &nbsp;&nbsp;<%=h @qtp_resource.dbcode %>
+<% end -%>
+    <table>
+  <tr>
+    <th>Date</th>
+    <th>Step</th>
+    <th>Status</th>
+    <th>Details</th>
+  </tr>
+  <% QtpLog.find_each(:conditions => { :lognum => @qtp_resource.id, :DBCode => @qtp_resource.dbcode}) do |f| %>
+    <tr>
+    <td><%= f.EVENTTIME %> </td>
+    <td><%= f.STEPNAME %></td>
+    <td><%= f.STATUS %></td>
+    <td><%= f.DETAILS %></td>
+  </tr>
+<% end -%>
+</table>
+        
+<%= link_to 'Back', qtp_resources_path %>
+

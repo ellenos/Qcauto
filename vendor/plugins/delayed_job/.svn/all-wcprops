@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/qa/!svn/ver/7172/Production_QC/Automation/Qcauto/vendor/plugins/delayed_job
+END
+delayed_job.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/delayed_job/delayed_job.gemspec
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/delayed_job/init.rb
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/delayed_job/MIT-LICENSE
+END
+README.textile
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/delayed_job/README.textile
+END

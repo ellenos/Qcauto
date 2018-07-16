@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/qa/!svn/ver/7263/Production_QC/Automation/Qcauto/app/views/qtp_resources
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/qa/!svn/ver/6776/Production_QC/Automation/Qcauto/app/views/qtp_resources/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/qa/!svn/ver/25339/Production_QC/Automation/Qcauto/app/views/qtp_resources/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/qa/!svn/ver/6776/Production_QC/Automation/Qcauto/app/views/qtp_resources/show.html.erb
+END
+create.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/qa/!svn/ver/25339/Production_QC/Automation/Qcauto/app/views/qtp_resources/create.html.erb
+END

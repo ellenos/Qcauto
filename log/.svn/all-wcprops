@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/log
+END
+test.log
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/log/test.log
+END
+production.log
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/log/production.log
+END
+server.log
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/log/server.log
+END

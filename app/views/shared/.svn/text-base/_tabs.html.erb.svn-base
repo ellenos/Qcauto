@@ -1,0 +1,9 @@
+<ul>
+    <li><%= tab_to "Dashboard", [{:controller => "home"}] %></li>
+    <li><%= link_to "QTP machines status", machines_path %></li>
+    <li><%= tab_to "Run AutoQC Test", [{:controller => "qtp_resources", :action => 'new'}] %></li>
+    <li><%= tab_to "Job Queue", [{:controller => "delayed_monitor", :action => 'index'}] %></li>
+    <li><%= tab_to "Labels", [{:controller => "labels", :action => 'index'}] %></li>
+    <li><%= tab_to "Priorities", [{:controller => "priorities", :action => 'index'}] %></li>
+    <li><%= tab_to "Consolidated status", [{:controller => "consolidated", :action => 'new'}] %></li>
+</ul>

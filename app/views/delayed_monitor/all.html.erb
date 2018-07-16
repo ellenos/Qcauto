@@ -1,0 +1,33 @@
+<% content_for :header do -%>
+  QTP Job Queue - All jobs
+<% end -%>
+
+<div style="clear:both;margin-top:20px;">
+<table width="100%">
+  <thead>
+  <tr>
+    <th scope="col">Job #</th>
+    <th scope="col">Status #</th>
+    <th scope="col">Started at</th>
+    <th scope="col">Finished at</th>
+    <th scope="col">Database</th>
+    <th scope="col">Label</th>
+  </tr>
+  </thead>
+<tbody>
+
+  <% @delayed_jobs.each do |dj| %>
+    <% row = QtpResource.find_by_delayed_job_id(dj.id) %>
+    <tr>
+      <td><%=h dj.id %></td>
+      <td><%=  if row then row.run_status end %></td>
+      <td><%=h dj.created_at.to_s(:fw_time) %></td>
+      <td><%=h dj.updated_at.to_s(:fw_time) %></td>
+      <td><%= if row then row.dbcode else "None" end%>
+      <td><%= if row then row.label else "None" end%>
+    </tr>
+  <% end %>
+
+</tbody>
+</table>
+</div>

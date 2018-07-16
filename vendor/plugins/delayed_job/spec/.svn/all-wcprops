@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/delayed_job/spec
+END
+delayed_method_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/delayed_job/spec/delayed_method_spec.rb
+END
+database.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/delayed_job/spec/database.rb
+END
+job_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/delayed_job/spec/job_spec.rb
+END
+story_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/delayed_job/spec/story_spec.rb
+END

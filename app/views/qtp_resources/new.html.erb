@@ -1,0 +1,22 @@
+<% content_for :header do -%>
+Run AutoQC Test
+<% end -%>
+
+
+<% form_for( :qtp_resource, @qtp_resource, :url=> qtp_resources_path) do |f| %>
+  <%= f.error_messages %>
+
+<%= @agent %>
+
+<DL>
+<DT><b>Please fill in the following information for the database being tested:</b></DT>
+<p/>
+<DT>Database Code: <%= f.text_field :dbcode, :size => 6, :maxlength => 10 %></DT>
+<DT>Database Label: <%=  select_tag :label, options_for_select(["", "live", "liveqc", "rebuild", "rebuildqc", "ldboqc", "devqc" ]) %></DT>
+<DT>Test Coverage: <%=  select_tag :coverage, options_for_select(["", "light", "medium", "full", "pre" ]) %></DT>
+<DT>Email address: <%= f.text_field :Email, :size => 80, :maxlength => 80 %></DT>
+<DT>Email Production: <%= f.check_box :EmailIncludeAll %></DT>
+</DL>
+<p/>
+<%= submit_tag "Run" %>
+<% end %>

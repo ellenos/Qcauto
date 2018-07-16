@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/qa/!svn/ver/6745/Production_QC/Automation/Qcauto/db/migrate
+END
+20100626131619_add_stats_to_delayed_jobs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/db/migrate/20100626131619_add_stats_to_delayed_jobs.rb
+END
+20100912125956_add_priority_qtp_resources.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/qa/!svn/ver/6602/Production_QC/Automation/Qcauto/db/migrate/20100912125956_add_priority_qtp_resources.rb
+END
+20100912131923_create_labels.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/qa/!svn/ver/6603/Production_QC/Automation/Qcauto/db/migrate/20100912131923_create_labels.rb
+END
+20100919153805_add_from_to_qtp_resources.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/qa/!svn/ver/6656/Production_QC/Automation/Qcauto/db/migrate/20100919153805_add_from_to_qtp_resources.rb
+END
+20101019211910_create_priorities.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/qa/!svn/ver/6745/Production_QC/Automation/Qcauto/db/migrate/20101019211910_create_priorities.rb
+END
+20091125163637_create_qtp_logs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/db/migrate/20091125163637_create_qtp_logs.rb
+END
+20100928150345_add_coverage_qtp_resources.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/qa/!svn/ver/6745/Production_QC/Automation/Qcauto/db/migrate/20100928150345_add_coverage_qtp_resources.rb
+END
+20100917125537_add_online_to_machine.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/qa/!svn/ver/6649/Production_QC/Automation/Qcauto/db/migrate/20100917125537_add_online_to_machine.rb
+END

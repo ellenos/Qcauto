@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/table_styles
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/table_styles/Rakefile
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/table_styles/init.rb
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/table_styles/install.rb
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/table_styles/MIT-LICENSE
+END
+uninstall.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/table_styles/uninstall.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/vendor/plugins/table_styles/README
+END

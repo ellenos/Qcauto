@@ -1,0 +1,39 @@
+<% content_for :header do -%>
+  QTP Job Queue - Jobs currently running
+<% end -%>
+
+<div style="clear:both;margin-top:20px;">
+  <% if @running_jobs.length > 0 %>
+  <table width="100%">
+  <thead>
+  <tr>
+    <th scope="col">Server</th>
+    <th scope="col">Started running</th>
+    <th scope="col">Database</th>
+    <th scope="col">Label</th>
+    <th scope="col">Priority</th>
+    <th scope="col">Coverage</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @running_jobs.each do |rj| %>
+  <% if (rj.qtp_resource_id) %>
+      <% row = QtpResource.find_by_id(rj.qtp_resource_id) %>
+      <% dj = row.delayed_job_id %>
+      <% dj_row = Delayed::Job.find_by_id(dj) %>
+      <tr>
+        <td><%= rj.name %></td>
+	<td><%= dj_row.first_started_at.to_s(:fw_time) %></td>
+        <td><%= row.dbcode %></td>
+        <td><%= row.label %></td>
+	<td><%= dj_row.priority.to_s %></td>
+	<td><%= row.coverage %></td>
+      </tr>
+    <% end %>
+    <% end %>
+  </tbody>
+  </table>
+  <% else %>
+  No jobs are running.
+  <% end %>
+</div>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/qa/!svn/ver/7338/Production_QC/Automation/Qcauto/app/views/machines
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/qa/!svn/ver/6518/Production_QC/Automation/Qcauto/app/views/machines/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qa/!svn/ver/25338/Production_QC/Automation/Qcauto/app/views/machines/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/qa/!svn/ver/6550/Production_QC/Automation/Qcauto/app/views/machines/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/qa/!svn/ver/6775/Production_QC/Automation/Qcauto/app/views/machines/show.html.erb
+END

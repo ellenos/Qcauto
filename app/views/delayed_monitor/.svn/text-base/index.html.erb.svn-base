@@ -1,0 +1,8 @@
+<% content_for :header do -%>
+  QTP Job Queue
+<% end -%>
+
+<ul>
+  <li><%= link_to "Jobs running now", running_url %></li>
+  <li><%= link_to "Jobs waiting on queue", waiting_url %></li>
+</ul>

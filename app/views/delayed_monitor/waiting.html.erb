@@ -1,0 +1,67 @@
+<% content_for :header do -%>
+  QTP Job Queue - Jobs waiting to run
+<% end -%>
+
+<div style="clear:both;margin-top:20px;">
+<% if @waiting_jobs && @waiting_jobs.length > 0 then %>
+  <table width="100%">
+  <thead>
+  <tr>
+    <th scope="col">Job #</th>
+    <th scope="col">Added to Queue</th>
+    <th scope="col">Database</th>
+    <th scope="col">Label</th>
+    <th scope="col">Priority</th>
+    <th scope="col">Coverage</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @waiting_jobs.each do |wj| %>
+    <% row = QtpResource.find_by_delayed_job_id(wj.id) %>
+    <tr>
+      <td><%=h wj.id %></td>
+      <td><%=h wj.created_at.to_s(:fw_time) %></td>
+      <td><%= if row then row.dbcode else "None" end%>
+      <td><%= if row then row.label else "None" end%>
+      <td><%= wj.priority.to_s %></td>
+      <td><%= if row then row.coverage else "None" end%>
+    </tr>
+  <% end %>
+  </tbody>
+  </table>
+      <% else %>
+  No jobs are waiting to run.
+  <% end %>
+</div>
+
+<h3>Stuck Jobs</h3>
+
+<div style="clear:both;margin-top:20px;">
+<% if @jobs_stuck && @jobs_stuck.length > 0 then %>
+  <table width="100%">
+  <thead>
+  <tr>
+    <th scope="col">Job #</th>
+    <th scope="col">Added to Queue</th>
+    <th scope="col">Database</th>
+    <th scope="col">Label</th>
+    <th scope="col">Priority</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @jobs_stuck.each do |wj| %>
+    <% row = QtpResource.find_by_delayed_job_id(wj.id) %>
+    <tr>
+      <td><%=h wj.id %></td>
+      <td><%=h wj.created_at.to_s(:fw_time) %></td>
+      <td><%= if row then row.dbcode else "None" end%>
+      <td><%= if row then row.label else "None" end%>
+      <td><%= wj.priority.to_s %></td>
+    </tr>
+  <% end %>
+  </tbody>
+  </table>
+      <% else %>
+  No jobs are stuck in the queue.
+  <% end %>
+</div>

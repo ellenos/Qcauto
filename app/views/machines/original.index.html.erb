@@ -1,0 +1,50 @@
+<% content_for :header do -%>
+  QTP Machines
+<% end -%>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Status</th>
+    <th>Online</th>
+    <th>QTP</th>
+    <th>Running</th>
+    <th>Reboot</th>
+    <th>Set Online</th>
+    <th>Set Offline</th>
+  </tr>
+
+<% @machines.each do |machine| %>
+  <tr>
+    <td><%=h machine.name %></td>
+    <td><% if (machine.status == 0) %>Ready<% else %>Busy<% end %></td>
+    <td><% if (machine.online) %>Online<% else %>Offline<% end %></td>
+    <td><%= if (machine.online)
+    machine.isRunning
+    end %></td>
+    <td><%= if (machine.online)
+    machine.whatsRunning
+    end %></td>
+    <td>
+      <% form_tag(:controller => "machines", :id=> machine.id, :action => "reboot") do -%>
+        <%= submit_tag 'Reboot' %>
+        <% end -%>
+    </td>
+    <td>
+      <% form_tag(:controller => "machines", :id=> machine.id, :action => "online") do -%>
+        <%= submit_tag 'Set Online' %>
+        <% end -%>
+    </td>
+    <td>
+      <% form_tag(:controller => "machines", :id=> machine.id, :action => "offline") do -%>
+        <%= submit_tag 'Set Offline' %>
+        <% end -%>
+    </td>
+
+  </tr>
+<% end %>
+</table>
+<br />
+
+<%= link_to 'Add a machine', new_machine_path %>
+

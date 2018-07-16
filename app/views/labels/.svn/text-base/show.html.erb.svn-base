@@ -1,0 +1,8 @@
+<% content_for :header do -%>
+  Label: <%=h @label.name %>&nbsp;&nbsp;Priority: <%=h @label.priority %>
+<% end -%>
+
+
+
+<%= link_to 'Edit', edit_label_path(@label) %> |
+<%= link_to 'Back', labels_path %>

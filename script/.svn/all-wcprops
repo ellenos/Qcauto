@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/qa/!svn/ver/6199/Production_QC/Automation/Qcauto/script
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/qa/!svn/ver/6199/Production_QC/Automation/Qcauto/script/console
+END
+server
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/qa/!svn/ver/6198/Production_QC/Automation/Qcauto/script/server
+END
+dbconsole
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/script/dbconsole
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/script/destroy
+END
+runner
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/script/runner
+END
+about
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/script/about
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/script/generate
+END
+plugin
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/script/plugin
+END

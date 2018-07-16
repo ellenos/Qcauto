@@ -1,0 +1,22 @@
+<% content_for :header do -%>
+  Labels
+<% end -%>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Priority</th>
+  </tr>
+
+<% @labels.each do |label| %>
+  <tr>
+    <td><%=h label.name %></td>
+    <td><%=h label.priority %></td>
+    <td><%= link_to 'Edit', edit_label_path(label) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New label', new_label_path %>

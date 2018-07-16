@@ -1,0 +1,16 @@
+<!-- _generic_info.html.erb -->
+
+<!-- this needs to moved to a place it can be called from and shared -->
+<DL>
+<DT><b>Please fill in the following information for the database being tested:</b></DT>
+<p/>
+
+<DT>Database Code: <%= f.text_field :DatabaseCode, :size => 15, :maxlength => 20 %></DT>
+<DT>Database Long Name: <%= f.text_field :DatabaseName, :size => 50, :maxlength => 100 %> (Exactly as found in Admin)</DT>
+<DT>Database Label: <%=  select_tag :label, options_for_select(["", "live", "liveqc", "rebuild", "rebuildqc", "ldboqc", "devqc", "webqc" ]) %></DT>
+<DT>Profile of build to test: <%= f.text_field :Profile, :size => 20, :maxlength => 100 %></DT>
+<DT>Interface: <%= f.radio_button :Interface, "ehost", :checked => true %>Ehost&nbsp;&nbsp;
+<%= f.radio_button :Interface, "eds" %>Discovery</DT>
+<DT>EPDB Database: <%= f.radio_button :Epdb, 1 %>Yes&nbsp;&nbsp;
+<%= f.radio_button :Epdb, 0, :checked => true %>No</DT>
+</DL>

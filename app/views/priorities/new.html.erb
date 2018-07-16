@@ -1,0 +1,27 @@
+<% content_for :header do -%>
+  Create Priority for Database
+<% end -%>
+
+
+<% form_for(@priority) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :dbcode %><br />
+    <%= f.text_field :dbcode %>
+  </p>
+  <p>
+    <%= f.label :label %><br />
+    <%= f.text_field :label %>
+  </p>
+  <p>
+    <%= f.label :priority %><br />
+    <%= f.text_field :priority %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+
+<%= link_to 'Back', priorities_path %>

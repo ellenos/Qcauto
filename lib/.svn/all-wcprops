@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/qa/!svn/ver/7308/Production_QC/Automation/Qcauto/lib
+END
+observer_extensions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/qa/!svn/ver/6197/Production_QC/Automation/Qcauto/lib/observer_extensions.rb
+END
+qcauto_delayed_notification.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qa/!svn/ver/6593/Production_QC/Automation/Qcauto/lib/qcauto_delayed_notification.rb
+END

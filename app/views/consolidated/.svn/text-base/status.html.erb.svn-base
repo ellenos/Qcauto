@@ -1,0 +1,48 @@
+<% content_for :header do -%>
+<% end -%>
+
+<% if @result_array.length > 0 %>
+
+<p>
+  <b>Consolidated product: <%= @con_db %></b><br/>
+  Started running at <%= @result_array[0]['EVENTTIME'] %><br/>
+</p>
+
+<table>
+  <tr>
+    <th>Subset</th>
+    <th>Status</th>
+    <th>Stepname</th>
+    <th>Expected</th>
+    <th>Actual</th>
+  </tr>
+
+<% @result_array.each do |element| %>
+  <% if element['STATUS'].strip! == "Fail" and not(element['STEPNAME'] == "Close Test") %>
+  <tr>
+     <td><%=h element['DBCode'] %></td>
+    <td><%=h element['STATUS'] %></td>
+    <td><%=h element['STEPNAME'] %></td>
+    <td><%=h element['EXPECTED'] %></td>
+    <td><%=h element['ACTUAL'] %></td
+  </tr>
+  <% end %>
+<% end %>
+
+<% @result_array.each do |element| %>
+  <% if element['STATUS'] == "Pass" and element['STEPNAME'] == "Close Test" %>
+  <tr>
+     <td><%=h element['DBCode'] %></td>
+    <td><%=h element['STATUS'] %></td>
+    <td><%=h element['STEPNAME'] %></td>
+    <td><%=h element['EXPECTED'] %></td>
+    <td><%=h element['ACTUAL'] %></td>
+  </tr>
+  <% end %>
+<% end %>
+</table>
+
+<% else %>
+<b>No product found</b>
+
+<% end %>

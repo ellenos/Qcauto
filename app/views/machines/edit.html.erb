@@ -1,0 +1,24 @@
+<h1>Editing machine</h1>
+
+<% form_for(@machine) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </p>
+  <p>
+    <%= f.label :delayed_id %><br />
+    <%= f.text_field :delayed_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @machine %> |
+<%= link_to 'Back', machines_path %>

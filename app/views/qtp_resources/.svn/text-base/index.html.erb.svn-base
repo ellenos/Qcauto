@@ -1,0 +1,33 @@
+<% content_for :header do -%>
+<div >
+<table width="100%">
+  <thead>
+  <tr>
+    <th scope="col">Job #</th>
+    <th scope="col">DBCode</th>
+    <th scope="col">DBLabel</th>
+    <th scope="col">Started at</th>
+    <th scope="col">Finished at</th>
+    <th scope="col">Server</th>
+  </tr>
+  </thead>
+  <% end -%>
+<tbody>
+<% @qtp_resources.each do |qtp_resource| %>
+  <% dj_row = Delayed::Job.find_by_id(qtp_resource.delayed_job_id) %>
+  <tr>
+    <td><%=h qtp_resource.id %></td>
+    <td><%=h qtp_resource.dbcode %></td>
+    <td><%=h qtp_resource.label %></td>
+    <td><%=h qtp_resource.created_at.to_s(:fw_time) %></td>
+    <td><%=h qtp_resource.updated_at.to_s(:fw_time) %></td>
+    <td><%=h qtp_resource.servername %></td>
+    <td><%=h qtp_resource.run_status %></td>
+    <td><%= link_to 'Log', qtp_resource %></td>
+    <td><%= link_to 'Destroy', qtp_resource, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+</div>
+<br />

@@ -1,0 +1,61 @@
+<% content_for :header do -%>
+  QTP Machines
+<% end -%>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Status</th>
+    <th>Online</th>
+	<th>Started running</th>
+    <th>QTP</th>
+    <th>Running</th>
+    <th>Reboot</th>
+    <th>Set Online</th>
+    <th>Set Offline</th>
+  </tr>
+
+<% @machines.each do |machine| %>
+  <tr>
+    <td><%=h machine.name %></td>
+    <% if (machine.status == 0) %><td class="ready">Ready<% else %><td class="busy">Busy<% end %></td>
+    <% if (machine.online) %><td class="online">Online<% else %><td class="offline">Offline<% end %></td>
+    <td>	
+		<%
+			if (machine.qtp_resource_id)
+			  row = QtpResource.find_by_id(machine.qtp_resource_id)
+			  dj = row.delayed_job_id
+			  dj_row = Delayed::Job.find_by_id(dj)
+		%>
+		<%= dj_row.first_started_at.to_s(:fw_time) %>
+		<% end %>
+	</td>
+	<td><%= if (machine.online)
+    machine.isRunning
+    end %></td>
+    <td><%= if (machine.online)
+    machine.whatsRunning
+    end %></td>
+    <td>
+      <% form_tag(:controller => "machines", :id=> machine.id, :action => "reboot") do -%>
+        <%= submit_tag 'Reboot' %>
+        <% end -%>
+    </td>
+    <td>
+      <% form_tag(:controller => "machines", :id=> machine.id, :action => "online") do -%>
+        <%= submit_tag 'Set Online' %>
+        <% end -%>
+    </td>
+    <td>
+      <% form_tag(:controller => "machines", :id=> machine.id, :action => "offline") do -%>
+        <%= submit_tag 'Set Offline' %>
+        <% end -%>
+    </td>
+
+  </tr>
+<% end %>
+</table>
+<br />
+
+<%= link_to 'Add a machine', new_machine_path %>
+

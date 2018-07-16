@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/qa/!svn/ver/7172/Production_QC/Automation/Qcauto/vendor/plugins/delayed_job/lib/tasks
+END
+tasks.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/qa/!svn/ver/7172/Production_QC/Automation/Qcauto/vendor/plugins/delayed_job/lib/tasks/tasks.rb
+END
+jobs.rake
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/qa/!svn/ver/7172/Production_QC/Automation/Qcauto/vendor/plugins/delayed_job/lib/tasks/jobs.rake
+END

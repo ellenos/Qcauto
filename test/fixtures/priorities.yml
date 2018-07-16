@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  dbcode: MyString
+  label: MyString
+  priority: 1
+
+two:
+  dbcode: MyString
+  label: MyString
+  priority: 1

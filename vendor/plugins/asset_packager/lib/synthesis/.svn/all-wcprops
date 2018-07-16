@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/qa/!svn/ver/6555/Production_QC/Automation/Qcauto/vendor/plugins/asset_packager/lib/synthesis
+END
+asset_package_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/qa/!svn/ver/6555/Production_QC/Automation/Qcauto/vendor/plugins/asset_packager/lib/synthesis/asset_package_helper.rb
+END
+asset_package.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/qa/!svn/ver/6555/Production_QC/Automation/Qcauto/vendor/plugins/asset_packager/lib/synthesis/asset_package.rb
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/qa/!svn/ver/7308/Production_QC/Automation/Qcauto/lib/tasks
+END
+ParseConfig.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/qa/!svn/ver/6593/Production_QC/Automation/Qcauto/lib/tasks/ParseConfig.rb
+END
+waiting.rake
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/qa/!svn/ver/6942/Production_QC/Automation/Qcauto/lib/tasks/waiting.rake
+END
+run_too_long.rake
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/qa/!svn/ver/6941/Production_QC/Automation/Qcauto/lib/tasks/run_too_long.rake
+END
+remove_from_queues.rake
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/qa/!svn/ver/7308/Production_QC/Automation/Qcauto/lib/tasks/remove_from_queues.rake
+END
+autoqc.rake
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/qa/!svn/ver/6593/Production_QC/Automation/Qcauto/lib/tasks/autoqc.rake
+END

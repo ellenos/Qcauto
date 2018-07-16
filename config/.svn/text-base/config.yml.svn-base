@@ -1,0 +1,21 @@
+# Configuration options can be accessed as
+#   configatron.site_name
+
+development: &local
+    site_name: QC Automation
+    site_url: da-objpub102.epnet.com:3003
+    
+    company_name: EBSCO Publishing -
+    admin_email: eosullivan@epnet.com
+    
+    support_name: Support
+    support_email: eosullivan@epnet.com
+
+production:
+  <<: *local
+  
+staging:
+  <<: *local
+
+test:
+  <<: *local

@@ -1,0 +1,12 @@
+<% content_for :header do -%>
+<% end -%>
+
+<p>
+  <b>Name:</b>
+  <%=h @machine.name %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_machine_path(@machine) %> |
+<%= link_to 'Back', machines_path %>
